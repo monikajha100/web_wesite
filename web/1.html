@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+        <ul class="menu">
+        <li class="logo_li"><a href="#"><img class="logo" src="mvglogo.png"></a></li>
+        <li><a href="6.html"> ABOUT US</a></li>
+        <li><a href="#"> INDUSTRY</a></li>
+        <li><a href="#"> CARRIER</a></li>
+        <li><a href="#"> CONTACT US</a></li> 
+        <li class="search-container">
+            <input type="text" placeholder="Search here...">
+            <button class="search-button">Search</button></li>
+        
+        </ul>
+        <ul>
+        <div class="slideshow-container" >
+
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <h2>Slide 1</h2>
+                <p>Welcome to the first slide!</p>
+            </div>
+        
+            <!-- Slide 2 -->
+            <div class="slide">
+                <h2>Slide 2</h2>
+                <p>This is the second slide.</p>
+            </div>
+        
+            <!-- Slide 3 -->
+            <div class="slide">
+                <h2>Slide 3</h2>
+                <p>This is the third slide.</p>
+            </div>
+        <!-- Slide 4 -->
+        <div class="slide">
+            <h2>Slide 4</h2>
+            <p>This is the fourth slide.</p>
+        </div>
+        <!-- Slide 5 -->
+        <div class="slide">
+            <h2>Slide 5</h2>
+            <p>This is the fifth slide.</p>
+        </div>
+        <!-- Slide 6 -->
+        <div class="slide">
+            <h2>Slide 6</h2>
+            <p>This is the sixth slide.</p>
+        </div>
+             <!-- Arrow buttons -->
+            <a class="prev"  onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next"  onclick="changeSlide(1)">&#10095;</a>
+         </div>
+             <!-- JavaScript for slide navigation -->
+        <script>
+            let currentSlideIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+        
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+        
+                // Show the targeted slide
+                slides[index].classList.add('active');
+            }
+        
+            function changeSlide(direction) {
+                // Update slide index
+                currentSlideIndex += direction;
+        
+                // Wrap around if index exceeds number of slides
+                if (currentSlideIndex >= slides.length) {
+                    currentSlideIndex = 0;
+                }
+        
+                // Wrap around if index is negative
+                if (currentSlideIndex < 0) {
+                    currentSlideIndex = slides.length - 1;
+                }
+        
+                // Show the current slide
+                showSlide(currentSlideIndex);
+            }
+        </script>
+         <ul class="mon">
+           
+            
+            <li><a href="2.html">SERVICES</a></li>
+            <li><a href="3.html">INSTITUTE TRAINING</a></li>
+            
+          </ul>
+          <div class="counter-container">
+            <h1> Visit Costumer</h1>
+            <p id="count">0</p>
+        </div>
+    
+        <script>
+            // Function to update the customer count
+            function updateCount() {
+                // Check if localStorage has 'visitCount' key
+                if (localStorage.getItem('visitCount')) {
+                    // Increment the existing count by 1
+                    let count = parseInt(localStorage.getItem('visitCount')) + 1;
+                    localStorage.setItem('visitCount', count);
+                    document.getElementById('count').innerText = count;
+                } else {
+                    // Initialize count to 1 if no previous count exists
+                    localStorage.setItem('visitCount', 1);
+                    document.getElementById('count').innerText = 1;
+                }
+            }
+            updateCount();
+        </script>
+        <div class="big">
+        <div class="image-container">
+            <!-- Image with 30% width of the page -->
+            <img src="slide.png" alt="Image">
+        </div>
+       
+        </div>
+</script> 
+<div class="scrolling-text">
+    <p> crore Ad spent.5+years |100+ brands </p>
+    <div class="scroll">
+        <div class="sc"></div>
+    </div>
+    <div class="scroll"></div>
+    <div class="scroll"></div>
+</div>
+
+
+
+<ul class="box1">
+    <li><p><h2>Careers</h2></p>
+    <p>Gain and Haritage.Leave a Legacy</p>
+
+<div class="box3">
+    <a href="https://www.example.com" target="_blank">join us</a>
+</div>
+<li><a  style="width: 2px; height: 200px; background-color:black;"></a></li>
+</li>
+
+<li><h2> Contact US</h2>
+    <p>What can be Help  You Achieve.</p>
+    <div class="box3">
+    <a href="https://www.example.com" target="_blank">Speak with us</a></div>
+</ul>
+
+
+<ul class="box2">
+    <li><p><h2><img  class="log"  src="mvglogo.png"  width="15%"></h2></p></li>
+</ul>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+.menu
+{
+    width: 100%;
+    height: 50px;
+    background-color:dodgerblue;
+}
+.menu li
+{
+    list-style: none;
+    width: 160px;
+    height: 50px;
+    background-color: dodgerblue;
+    margin:5px;
+    text-align: center;
+    line-height: 50px;
+    float:left;
+    margin-left: 20px;
+    margin-top: 0%;
+    
+} 
+.menu li a
+{
+color: white;
+display: block;
+text-decoration: none;
+}
+.menu li:hover{
+    background-color: black;
+}
+.logo{
+    width: 80%;
+}
+ .mon li
+{
+    list-style: none;
+    width: 160px;
+    height: 50px;
+    background-color: dodgerblue;
+    margin:5px;
+    text-align: center;
+    line-height: 50px;
+    float:left;
+    margin-left: 20px;
+    margin-top: 0%;
+    
+} 
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+}
